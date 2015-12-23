@@ -1,0 +1,46 @@
+/* Carousel base class */
+.carousel {
+	height: 500px;  /*幻灯片外框高度*/
+	margin-bottom: 10px;
+}
+/*设置幻灯片中内容的占有区域为中间的70%的范围，因为两端点击区域的各占15%*/
+.carousel-inner{
+	width:100%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-inner > .item {
+  height: 500px;   /*幻灯片内容高度*/  
+  overflow:visible;/*使超出边框的图片隐藏，防止变形*/
+}
+.carousel-inner > .item > img {
+  position: absolute;  /*使图片从文档流中删除，使之与文字共存*/
+  height: 100%; /*图片高度，100%为幻灯片框高度，auto为图片原始高度*/
+  width:auto;	/*保持图片的原始比例*/
+  max-width:200%;
+  margin:auto;top:0;bottom:0;left:0;right:0;  /*先使外边界与图片框边界对齐，然后使margin为auto，使图片居中*/
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* RESPONSIVE CSS-------------------------------------------------- */
+@media (min-width: 768px) and (max-width:991px) {
+	.carousel {
+	  height: 400px;  /*幻灯片外框高度*/
+	}
+	.carousel-inner > .item {
+	  height: 400px;   /*幻灯片内容高度*/
+	}
+}
+@media (min-width: 992px) {
+}
+@media (max-width:767px){
+	.carousel {
+	  height: 300px;  /*幻灯片外框高度*/
+	}
+	.carousel-inner > .item {
+	  height: 300px;   /*幻灯片内容高度*/
+	}
+}

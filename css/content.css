@@ -1,0 +1,73 @@
+/* Featurettes------------------------- */
+.container.marketing{
+	padding-top:50px;
+	font-size:14px;
+}
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+  
+}
+/* Thin out the marketing headings */
+.row.featurette{
+	background: url('../images/border-bg.gif') left bottom repeat-x;
+	margin-bottom:40px;
+	padding-bottom:40px;
+}
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.lead{
+	font-size:18px;
+}
+
+.pictureIntroduce{
+	width:100%;
+	height:auto;
+	margin:20px 20px 20px 0;
+	overflow:hidden;
+}
+
+.img-indent { 
+	margin:0 40px 20px 0; 
+	float:left;
+}
+
+.title{
+	display:block;
+	padding: 0 0 10px 0;
+}
+
+
+
+/* RESPONSIVE CSS-------------------------------------------------- */
+@media (min-width: 768px) and (max-width:991px) {
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .introduce{
+	  width:72%;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 0px;
+  }
+  .container.marketing{
+	padding-left:10%;
+	padding-right:10%;
+  }
+}
+
+@media (max-width:767px){
+}

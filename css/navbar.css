@@ -1,0 +1,164 @@
+/* GLOBAL STYLES-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-top:80px;/*显示由于导航栏挡住的部分*/
+  padding-bottom: 0px;
+  color: #343434;
+  background:#edf0f6;
+  font-family:"Microsoft Yahei";
+}
+
+/* CUSTOMIZE THE NAVBAR------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-inverse{
+  background-color:#333;/*设置导航栏的背景*/
+}
+
+.navbar-nav>li>a{
+	font-size:16px;
+	font-weight:bold;
+	text-align:right;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background-color:transparent;  /*设置导航栏的的链接的背景为透明*/
+}
+.nav>li>a:hover{
+	font-size:18px;  /*设置鼠标移动到导航栏上时字体变大*/
+}
+
+/*footer setting-----------------------*/
+footer{
+	padding-top:30px;
+}
+footer > p{
+	text-align:center;
+}
+
+
+/* RESPONSIVE CSS-------------------------------------------------- */
+@media (min-width: 768px) and (max-width:991px) {
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-wrapper .navbar .container {
+		padding:0;;
+  }
+  .navbar>.container .navbar-brand,
+  .navbar>.container-fluid .navbar-brand{
+	  margin-left:0px;
+  }
+  .navbar-brand{
+	  height:auto;
+	  padding:5px 0px;
+  }
+  #navbar{
+	  float: right;
+	  height: auto;
+	  width:510px;
+	  margin-right:0;
+  }
+  .navbar-nav{
+	  height:auto;
+	  margin-top:55px;
+	  width:100%;
+  }
+  .navbar-nav>li{
+	  width:85px;
+  }  
+  .navbar-nav>li>a{
+	  padding:0px;
+	  text-align:center;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .navbar-wrapper .navbar {
+	padding-right: 15px;
+	padding-left: 15px;
+  }
+  .navbar>.container .navbar-brand,
+  .navbar>.container-fluid .navbar-brand{
+	  margin-left:20px;
+  }
+  .navbar-brand{
+	  height:auto;
+	  padding:5px;
+  }
+  #navbar{
+	  float: right;
+	  height: auto;
+	  width:600px;
+	  margin-right:40px;
+  }
+  
+  .navbar-nav{
+	  height:auto;
+	  margin-top:55px;
+	  width:100%;
+  }
+  .navbar-nav>li{
+	  width:100px;
+  }
+  .nav>li>a{
+	  padding:0px;
+	  text-align:center;
+  }
+}
+@media (max-width:767px){
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-wrapper .navbar .container {
+		padding:0;
+  }
+  .navbar>.container .navbar-brand,
+  .navbar>.container-fluid .navbar-brand{
+	  margin-left:30px;
+  }
+  .navbar-brand{
+	  height:auto;
+	  padding:5px 5px;
+  }
+  #navbar{
+	  float: right;
+	  height: auto;
+	  width:500px;
+  }
+  .navbar-nav{
+	  height:auto;
+	  margin-top:0px;
+	  margin-right:10px;
+	  width:100px;
+	  float:right;
+  }
+  .navbar-nav>li{
+	  width:auto;
+  }  
+  .navbar-nav>li>a{
+	  text-align:center;
+	  padding:0px;
+	  margin:10px;
+  }
+  .navbar-toggle{
+	float:right;
+	padding:10px;
+	margin-top:30px;
+	margin-right:50px;
+	margin-bottom:10px;
+  }
+}
